@@ -147,13 +147,14 @@ Baseline, gilt in jedem Projekt für neue/geänderte Arbeit — kein WCAG-AA-Vol
 - [ ] **8.3** Kein `tabindex` > 0; keine fokussierbaren Elemente ohne Funktion.
 - [ ] **8.4** Jedes Formularfeld hat ein verknüpftes Label (`<label for>`, `#title` im Form-API-Element). Placeholder allein ist kein Label.
 - [ ] **8.5** Jedes `<img>` bzw. Bildfeld hat ein `alt`-Attribut — leer bei dekorativ, beschreibend bei inhaltlich. Fehlendes `alt` ist immer ein Verstoß.
-- [ ] **8.6** Überschriftenebenen sind strukturell vergeben: eine `h1` pro Seite, keine übersprungenen Ebenen, keine Ebenenwahl aus optischen Gründen.
-- [ ] **8.7** Status, Fehler und Pflichtfelder werden nicht ausschließlich über Farbe vermittelt.
-- [ ] **8.8** Kontrast-/Farbwerte kommen aus Theme-Tokens (`var(--…)`), nicht als Einzelwert in der Komponente (vgl. 3.3).
-- [ ] **8.9** Inhalte, die per AJAX ohne Seitenwechsel ausgetauscht werden, melden das via `Drupal.announce()`.
-- [ ] **8.10** Datentabellen nutzen `<th>` mit `scope` und eine `<caption>`; `<table>` wird nicht für Layout verwendet.
-- [ ] **8.11** Linktexte sind aus sich heraus verständlich. ❌ „hier klicken", „mehr", „weiterlesen" ohne Bezug im Linktext selbst.
-- [ ] **8.12** Kein Accessibility-Overlay / keine A11y-Toolbar (accessiBe, UserWay, Eye-Able o. ä.) wird eingebunden.
+- [ ] **8.6** Icon-only Buttons/Links (SVG-Icon, Icon-Font, CSS-Hintergrundbild, kein sichtbarer Text) haben einen zugänglichen Namen: versteckter Text (`<span class="visually-hidden">…</span>`), `aria-label` oder `<title>` im SVG. ❌ `<button><svg …></svg></button>` ohne Textalternative. Dekoratives Icon neben sichtbarem Text: `aria-hidden="true"`.
+- [ ] **8.7** Überschriftenebenen sind strukturell vergeben: eine `h1` pro Seite, keine übersprungenen Ebenen, keine Ebenenwahl aus optischen Gründen.
+- [ ] **8.8** Status, Fehler und Pflichtfelder werden nicht ausschließlich über Farbe vermittelt.
+- [ ] **8.9** Kontrast-/Farbwerte kommen aus Theme-Tokens (`var(--…)`), nicht als Einzelwert in der Komponente (vgl. 3.3).
+- [ ] **8.10** Inhalte, die per AJAX ohne Seitenwechsel ausgetauscht werden, melden das via `Drupal.announce()`.
+- [ ] **8.11** Datentabellen nutzen `<th>` mit `scope` und eine `<caption>`; `<table>` wird nicht für Layout verwendet.
+- [ ] **8.12** Linktexte sind aus sich heraus verständlich. ❌ „hier klicken", „mehr", „weiterlesen" ohne Bezug im Linktext selbst.
+- [ ] **8.13** Kein Accessibility-Overlay / keine A11y-Toolbar (accessiBe, UserWay, Eye-Able o. ä.) wird eingebunden.
 
 ## 9. Logging (📄 logging.md)
 
