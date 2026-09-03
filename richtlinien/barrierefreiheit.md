@@ -29,19 +29,20 @@ Die Baseline ist **kein WCAG-AA-Ziel** und keine Umsetzung gesetzlicher Anforder
 
 8. **Jedes Formularfeld hat ein programmatisch verknüpftes Label.** Ein Placeholder ist kein Label. Fehlermeldungen stehen als Text am Feld und sind mit ihm verknüpft.
 9. **Jedes Bild hat ein `alt`.** Leer (`alt=""`) bei rein dekorativen Bildern, beschreibend bei inhaltlichen. Kein `alt` ist immer falsch.
-10. **Linktexte sind aus sich heraus verständlich.** „Hier klicken" oder „mehr" sagt nichts, wenn Links isoliert vorgelesen werden.
-11. **Inhalte, die sich ohne Seitenwechsel ändern, werden angekündigt** (`Drupal.announce()`) — AJAX-Views, Exposed Filter, Pager, asynchrone Statusmeldungen.
+10. **Icon-only Elemente haben einen zugänglichen Namen.** Buttons und Links ohne sichtbaren Text — SVG-Icon, Icon-Font — brauchen eine Textalternative: versteckter Text (`.visually-hidden`, kommt aus der Core-Library `system/base`), `aria-label` oder `<title>` im SVG. Ein SVG ohne Textalternative ist für Screenreader stumm. Umgekehrt gilt: ein Icon *neben* sichtbarem Text ist dekorativ und wird mit `aria-hidden="true"` ausgeblendet, statt den Namen zu verdoppeln. Muster und Entscheidungshilfe: [WAI Tutorial: Functional Images](https://www.w3.org/WAI/tutorials/images/functional/).
+11. **Linktexte sind aus sich heraus verständlich.** „Hier klicken" oder „mehr" sagt nichts, wenn Links isoliert vorgelesen werden.
+12. **Inhalte, die sich ohne Seitenwechsel ändern, werden angekündigt** (`Drupal.announce()`) — AJAX-Views, Exposed Filter, Pager, asynchrone Statusmeldungen.
 
 ### Darstellung
 
-12. **Farbe ist nie der einzige Informationsträger** — nicht bei Fehlern, Status, Pflichtfeldern oder Diagrammen.
-13. **Kontraste werden einmal in den Theme-Tokens festgelegt**, nicht pro Komponente entschieden (siehe [Themes und Styling](themes-styling.md)).
-14. **Layouts vertragen Vergrößerung.** Relative Einheiten statt fester Höhen und Pixel-Schriftgrößen; bei 200 % Zoom darf nichts abgeschnitten oder überlagert werden. Nachträglich ist das der teuerste Punkt der Liste.
-15. **`prefers-reduced-motion` wird respektiert.** Bewegung ist Komfort, kein Selbstzweck.
+13. **Farbe ist nie der einzige Informationsträger** — nicht bei Fehlern, Status, Pflichtfeldern oder Diagrammen.
+14. **Kontraste werden einmal in den Theme-Tokens festgelegt**, nicht pro Komponente entschieden (siehe [Themes und Styling](themes-styling.md)).
+15. **Layouts vertragen Vergrößerung.** Relative Einheiten statt fester Höhen und Pixel-Schriftgrößen; bei 200 % Zoom darf nichts abgeschnitten oder überlagert werden. Nachträglich ist das der teuerste Punkt der Liste.
+16. **`prefers-reduced-motion` wird respektiert.** Bewegung ist Komfort, kein Selbstzweck.
 
 ### Werkzeuge
 
-16. **Keine Accessibility-Overlays oder -Toolbars** (accessiBe, UserWay, Eye-Able o. ä.). Sie sind redundant zu den Einstellungen in Betriebssystem und Browser und beheben keine Barrieren — siehe [Overlay Factsheet](https://overlayfactsheet.com/de/).
+17. **Keine Accessibility-Overlays oder -Toolbars** (accessiBe, UserWay, Eye-Able o. ä.). Sie sind redundant zu den Einstellungen in Betriebssystem und Browser und beheben keine Barrieren — siehe [Overlay Factsheet](https://overlayfactsheet.com/de/).
 
 ## Wie wir darüber sprechen
 
