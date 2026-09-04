@@ -16,6 +16,7 @@ Meinung, dass unsere Vorgaben für jedes Team die richtigen sind.
 
 - [Contrib First Policy](richtlinien/contrib-first.md)
 - [Coding Standards](richtlinien/coding-standards.md)
+- [Kommentare](richtlinien/kommentare.md)
 - [Projektstruktur](richtlinien/projektstruktur.md)
 - [Themes und Styling](richtlinien/themes-styling.md)
 - [Architektur: Controller, Hooks, Events, Drush Generate, SDC](richtlinien/architektur.md)

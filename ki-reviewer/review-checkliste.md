@@ -170,3 +170,7 @@ Baseline, gilt in jedem Projekt für neue/geänderte Arbeit — kein WCAG-AA-Vol
   - `notice` → geschäftsrelevantes Ereignis (Bestellung, Login, Import-Start)
   - `info` → technischer Lifecycle (Cron, Deploy-Hook, Cache geleert)
   - `debug` → Diagnose-Details
+
+## 10. Kommentare (📄 kommentare.md)
+
+- [ ] **10.1** Neue oder geänderte Kommentare im Code sind englisch — einzeilige und mehrzeilige Kommentare, DocBlock-Beschreibungen, Twig-Kommentare (`{# … #}`), YAML-Kommentare. Nicht betroffen: UI-Texte und `t()`-Strings, Log-Meldungen. Bestandskommentare werden nicht rückwirkend geprüft.
